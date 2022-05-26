@@ -1,0 +1,33 @@
+.hero {
+	padding-top: 120px;
+	padding-bottom: 536px;
+	background-image: url('../images/hero-bg-image.png');
+	background-repeat: no-repeat;
+	background-size: 1440px 721px;
+	background-position: center;
+	background-color: #49bcf1;
+
+	&::before {
+		position: absolute;
+		top: calc(50% + 14px);
+		left: calc(50% - 20px);
+		width: 36px;
+		height: 115px;
+		background-image: url('../images/downarrow.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		content: '';
+	}
+}
+
+.hero__title {
+	@include diff-font;
+	@include m0-p0;
+	font-size: 56px;
+	line-height: 69px;
+	text-align: center;
+	letter-spacing: 8.75px;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: center;
+}
