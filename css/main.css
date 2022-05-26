@@ -529,8 +529,8 @@ img {
   .header__navbar--open {
     display: inline-block;
     top: 130px;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: scale();
+            transform: scale();
   }
   .header__list {
     -webkit-box-orient: vertical;
