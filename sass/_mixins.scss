@@ -1,0 +1,19 @@
+@mixin flex-starter {
+	display: flex;
+	align-items: center;
+}
+
+@mixin correct-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+@mixin m0-p0 {
+	margin: 0;
+	padding: 0;
+}
+
+@mixin diff-font {
+	font-family: 'Fraunces Soft', 'Times New Roman', serif;
+}
