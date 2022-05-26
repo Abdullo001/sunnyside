@@ -28,6 +28,10 @@
 
 .header__item {
 	margin-right: 47px;
+
+	&:nth-child(4) {
+		margin-right: 0;
+	}
 }
 
 .header__link {
@@ -61,5 +65,33 @@
 
 	&:active {
 		background-color: #ffffff25;
+	}
+}
+
+.header__burgerbtn {
+	display: none;
+	margin-left: auto;
+	font-size: 32px;
+	color: #ffffff;
+	border: 0;
+	background-color: transparent;
+}
+
+@media only screen and (max-width: 520px) {
+	.header {
+		padding-top: 32px;
+	}
+
+	.header__logoimg {
+		width: 123px;
+		height: 24px;
+	}
+
+	.header__navbar {
+		display: none;
+	}
+
+	.header__burgerbtn {
+		display: inline-block;
 	}
 }
