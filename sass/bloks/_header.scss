@@ -1,4 +1,5 @@
 .header {
+	position: relative;
 	padding-top: 34px;
 	background-color: #49bcf1;
 }
@@ -88,7 +89,57 @@
 	}
 
 	.header__navbar {
-		display: none;
+		// display: none;
+		position: absolute;
+		z-index: 100;
+		top: -350px;
+		left: calc(50% - 165px);
+		width: 330px;
+		padding: 39px 0;
+		background-color: #ffffff;
+		transition: all 0.5s ease;
+
+		&::before {
+			position: absolute;
+			top: -24px;
+			right: 0;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border-top: 24px solid transparent;
+			border-right: 24px solid #ffffff;
+			border-left: 24px solid transparent;
+			content: '';
+		}
+
+		&--open {
+			display: inline-block;
+			top: 130px;
+			transform: rotate(360deg);
+		}
+	}
+
+	.header__list {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.header__item {
+		margin-right: 0;
+		margin-bottom: 32px;
+
+		&:nth-child(4) {
+			margin-bottom: 0;
+		}
+	}
+
+	.header__btn {
+		background-color: #fbd600;
+		color: #24303e;
+	}
+
+	.header__link {
+		color: #808397;
 	}
 
 	.header__burgerbtn {
