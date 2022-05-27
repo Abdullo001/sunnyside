@@ -839,6 +839,7 @@ img {
 
 .client__list {
   margin: 0 auto;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -942,7 +943,8 @@ img {
     margin-bottom: 86px;
   }
   .client__item {
-    width: 327px;
+    max-width: 327px;
+    width: 100%;
     margin-right: 0;
     margin-bottom: 64px;
   }
