@@ -372,6 +372,7 @@ body {
   font-family: 'Barlow', 'Arial', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 img {
@@ -824,10 +825,8 @@ img {
 }
 
 .client__title {
-  width: 360px;
-  margin: 0 auto;
   margin-bottom: 81px;
-  font-family: 'Fraunces Soft' , serif;
+  font-family: 'Fraunces Soft', serif;
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
@@ -835,11 +834,10 @@ img {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
-  color: #A7AAAD;
+  color: #a7aaad;
 }
 
 .client__list {
-  width: 1110px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -863,13 +861,13 @@ img {
 .client__item::before {
   position: absolute;
   top: 0;
-  left: 139px;
+  left: calc(50% - 36px);
   display: inline-block;
   width: 72px;
   height: 72px;
   background-image: url("../images/Emily.svg");
   background-repeat: no-repeat;
-  content: "";
+  content: '';
 }
 
 .client__item:nth-child(2)::before {
@@ -890,20 +888,20 @@ img {
   line-height: 32px;
   text-align: center;
   letter-spacing: -0.128571px;
-  color: #5B636D;
+  color: #5b636d;
 }
 
 .client__name-text {
   display: block;
   margin-bottom: 9px;
-  font-family: 'Fraunces Soft' , serif;
+  font-family: 'Fraunces Soft', serif;
   font-style: normal;
   font-weight: 900;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
   letter-spacing: -0.128571px;
-  color: #24303E;
+  color: #24303e;
 }
 
 .client__position {
@@ -914,7 +912,7 @@ img {
   line-height: 25px;
   text-align: center;
   letter-spacing: -0.1px;
-  color: #A7AAAD;
+  color: #a7aaad;
 }
 
 @media only screen and (max-width: 576px) {
@@ -923,49 +921,33 @@ img {
     margin-bottom: 86px;
   }
   .client__title {
-    width: 416px;
     margin: 0 auto;
     margin-bottom: 64px;
   }
   .client__list {
-    width: 327px;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 86px;
   }
   .client__item {
     width: 327px;
     margin-right: 0;
     margin-bottom: 64px;
   }
+  .client__item:nth-child(3) {
+    margin-bottom: 0;
+  }
   .client__text {
     margin: 0;
     margin-top: 130px;
     margin-bottom: 32px;
   }
-  .client__item::before {
-    position: absolute;
-    top: 0;
-    left: 130px;
-    display: inline-block;
-    width: 72px;
-    height: 72px;
-    background-image: url("../images/Emily.svg");
-    background-repeat: no-repeat;
-    content: "";
-  }
 }
 
 .images .container {
-  width: 1440px;
+  max-width: 1440px;
   padding: 0;
 }
 
@@ -981,30 +963,44 @@ img {
           justify-content: center;
 }
 
+.images__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .images__img-mobile {
   display: none;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 520px) {
   .images .container {
-    max-width: 576px;
+    margin: 0;
+  }
+  .images__inner {
+    max-width: 520px;
     width: 100%;
   }
   .images__inner {
-    display: block;
-    width: 576px;
-  }
-  .images__img-mobile {
-    display: inline-block;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .images__img {
-    display: none;
+    max-width: 50%;
+    width: 100%;
+    height: auto;
   }
 }
 
 .footer {
   padding: 72px 0;
-  background-color: #90D4C6;
+  background-color: #90d4c6;
 }
 
 .footer__box {
@@ -1063,11 +1059,17 @@ img {
   font-size: 18px;
   line-height: 25px;
   text-decoration: none;
-  color: #458D7E;
+  color: #458d7e;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .footer__link:hover {
-  color: #FFF;
+  color: #fff;
+}
+
+.footer__link:active {
+  opacity: 0.5;
 }
 
 .footer__icon-link {
@@ -1083,11 +1085,18 @@ img {
   display: inline-block;
   margin-right: 28px;
   text-decoration: none;
-  color: #2C7566;
+  color: #2c7566;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .icon__link:hover {
   color: #fff;
+}
+
+.icon__link:active {
+  opacity: 0.5;
 }
 
 .icon__link:nth-child(4) {

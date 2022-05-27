@@ -1,77 +1,87 @@
-
-.footer{
-  padding: 72px 0;
-  background-color: #90D4C6;
+.footer {
+	padding: 72px 0;
+	background-color: #90d4c6;
 }
 
-.footer__box{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.footer__box {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
-.footer__logo-link{
-  display: inline-block;
-  margin-bottom: 40px;
-  text-decoration: none;
+.footer__logo-link {
+	display: inline-block;
+	margin-bottom: 40px;
+	text-decoration: none;
 }
 
-.footer__logo-img{
-  width: 170px;
-  height: 33px;
+.footer__logo-img {
+	width: 170px;
+	height: 33px;
 }
 
-.footer__list-box{
-  margin-bottom: 88px;
+.footer__list-box {
+	margin-bottom: 88px;
 }
 
-.footer__list{
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.footer__list {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
-.footer__item{
-  margin-right: 57px;
+.footer__item {
+	margin-right: 57px;
 
-  &:nth-child(3){
-    margin-right: 0;
-  }
+	&:nth-child(3) {
+		margin-right: 0;
+	}
 }
 
-.footer__link{
-  display: inline-block;  
-  font-family: 'Barlow';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-  text-decoration: none;
-  color: #458D7E;
+.footer__link {
+	display: inline-block;
+	font-family: 'Barlow';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-decoration: none;
+	color: #458d7e;
+	transition: all 0.3s ease;
 
-  &:hover{
-    color: #FFF;
-  }
+	&:hover {
+		color: #fff;
+	}
+
+	&:active {
+		opacity: 0.5;
+	}
 }
 
-.footer__icon-link{
-  display: flex;
-  align-items: center;
+.footer__icon-link {
+	display: flex;
+	align-items: center;
 }
 
-.icon__link{
-  display: inline-block;
-  margin-right: 28px;
-  text-decoration: none;
-  color: #2C7566;
+.icon__link {
+	display: inline-block;
+	margin-right: 28px;
+	text-decoration: none;
+	color: #2c7566;
+	opacity: 1;
+	transition: all 0.3s ease;
 
-  &:hover{
-    color: #fff;
-  }
+	&:hover {
+		color: #fff;
+	}
 
-  &:nth-child(4){
-    margin-right: 0;
-  }
+	&:active {
+		opacity: 0.5;
+	}
+
+	&:nth-child(4) {
+		margin-right: 0;
+	}
 }
