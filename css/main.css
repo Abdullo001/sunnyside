@@ -985,17 +985,36 @@ img {
   display: none;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 520px) {
   .images .container {
-    max-width: 576px;
+    max-width: 520px;
     width: 100%;
   }
   .images__inner {
     display: block;
-    width: 576px;
+    width: 100%;
   }
   .images__img-mobile {
     display: inline-block;
+    width: 100%;
+  }
+  .images__img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .images .container {
+    max-width: 440px;
+    width: 100%;
+  }
+  .images__inner {
+    display: block;
+    width: 100%;
+  }
+  .images__img-mobile {
+    display: inline-block;
+    width: 100%;
   }
   .images__img {
     display: none;
