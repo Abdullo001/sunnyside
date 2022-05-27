@@ -1,0 +1,40 @@
+
+.images {
+  .container {
+    width: 1440px;
+    padding: 0;
+  }
+}
+
+.images__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images__img-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .images {
+    .container {
+      max-width: 576px;
+      width: 100%;
+    }
+  }
+
+  .images__inner {
+    display: block;
+    width: 576px;
+  }
+
+  .images__img-mobile {
+    display: inline-block;
+  }
+
+  .images__img {
+    display: none;
+  }
+
+}
